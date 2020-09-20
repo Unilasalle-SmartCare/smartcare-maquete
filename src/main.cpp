@@ -2,6 +2,14 @@
 
 // --- ULTRASSÔNICO ---
 #include <Ultrasonic.h>
+#include <PubSubClient.h>
+#include <string.h>
+#include <Ethernet.h>
+
+// Update these with values suitable for your network.
+byte mac[]    = {  0xDE, 0xED, 0xBA, 0xFE, 0xFE, 0xED };
+IPAddress ip(192, 168, 0, 105);
+IPAddress server(192, 168, 0, 74);
 
 void verificaIdosoDeitado();
 void  verificaUltrasonico();
